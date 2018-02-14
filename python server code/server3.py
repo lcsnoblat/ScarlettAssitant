@@ -55,12 +55,12 @@ def chatboat(data):
         print(random_greeting)
         sclient(random_greeting)
         #os.system("flite -t '"+ random_greeting +"'")
-    elif 'Ligue a luz' in data or 'Acenda a luz' in data:
+    elif 'ligue a luz' in data or 'acenda a luz' in data:
         sclient("light turn on")
         #os.system("flite -t 'light turn on'")
         GPIO.output(2,GPIO.HIGH)
         print("Light on")
-    elif 'Desligue a luz' in data or 'Desligue a Luz' in data:
+    elif 'desligue a luz' in data or 'desligue a Luz' in data:
         sclient("light turn off")
         #os.system("flite -t 'light turn off'")
         GPIO.output(2,GPIO.LOW)
